@@ -1,0 +1,38 @@
+{
+  "id": "./index.html",
+  "name": "Firmo – أدوات زراعية",
+  "short_name": "Firmo",
+  "description": "Firmo – أدوات زراعية: مساحة البيفوت، تجربة الري، فحص التقاوي، متابعة الإنبات، الكثافة، تجربة الحصاد، فحص البيفوت، الخريطة",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#eef4ec",
+  "theme_color": "#0f7a3d",
+  "categories": ["productivity", "utilities", "business"],
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icons/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable"},
+    {"src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ],
+  "shortcuts": [
+    {"name": "مساحة البيفوت", "url": "./index.html#pivot", "icons": [{"src": "icons/icon-192.png", "sizes": "192x192"}]},
+    {"name": "تجربة الري", "url": "./index.html#irrig", "icons": [{"src": "icons/icon-192.png", "sizes": "192x192"}]},
+    {"name": "الخريطة", "url": "./index.html#map", "icons": [{"src": "icons/icon-192.png", "sizes": "192x192"}]},
+    {"name": "تجربة الحصاد", "url": "./index.html#harvest", "icons": [{"src": "icons/icon-192.png", "sizes": "192x192"}]}
+  ],
+  "file_handlers": [
+    {"action": "./index.html", "accept": {"application/json": [".json"], "text/plain": [".txt"], "text/csv": [".csv"], "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": [".xlsx"]}}
+  ],
+  "share_target": {
+    "action": "./share-target",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {"files": [{"name": "files", "accept": ["application/json", ".json", "text/plain", ".txt", "text/csv", ".csv", ".xlsx", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"]}]}
+  },
+  "prefer_related_applications": false
+}
